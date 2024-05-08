@@ -13,6 +13,7 @@
 
     static async url (req,res){
         const url_info = await ytModels.url(req)
+        console.log(url_info.success)
         res.json(url_info)
     }
 

@@ -34,6 +34,7 @@ class ytModels {
                 info: info.formats
             }
 
+            console.log("llega aqui")
             return response
 
         }
