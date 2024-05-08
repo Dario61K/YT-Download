@@ -14,6 +14,7 @@ class ytModels {
         console.log("entra en url")
         try {
             console.log("entra en el try")
+            console.log(req.body.url)
             const info = await ytdl.getInfo(req.body.url)
             console.log(req.body.url)
             for (let format of info.formats) {
