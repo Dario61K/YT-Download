@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/carga.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"rel="stylesheet">
+    <title>YT Download</title>
+    <link rel="icon" href="https://ik.imagekit.io/xb3lv4fjl/YT-Download-img/yt.png?updatedAt=1715178080657">
+</head>
+
+<body>
+    <header>
+        <div class="title">
+            <div style="background-image: url(https://ik.imagekit.io/xb3lv4fjl/YT-Download-img/yt.png?updatedAt=1715178080657); background-size: 1.5rem 1.5rem; width: 1.5rem; height: 1.5rem;"></div>
+            <h1 style="font-size: 100%; cursor: default;">YT Download</h1>
+        </div>
+        <div class="git-screen">
+            <a title="Telegram" href="https://t.me/dario_roquee" target="_blank"><div style="background-image: url(https://ik.imagekit.io/xb3lv4fjl/YT-Download-img/telegram.png?updatedAt=1715178080043); background-size: 1.5rem 1.5rem; width: 1.5rem; height: 1.5rem;"></div></a>
+            <a title="GitHub" href="https://github.com/Dario61K/YT-Download-web" target="_blank"><div style="background-image: url(https://ik.imagekit.io/xb3lv4fjl/YT-Download-img/github.png?updatedAt=1715178080050); background-size: 1.5rem 1.5rem; width: 1.5rem; height: 1.5rem;"></div></a>
+        </div>
+    </header>
+
+    <div class="prepare">
+        <label style="text-align: center;" class="prepare-msg"></label>
+        <div class="loader2">
+            <div class="load2"></div>
+            <button class="done">Done</button>
+        </div>
+    </div>
+
+
+    <section class="main">
+        <form id="url-form">
+            <label class="url-label" for="url" style="padding: 0 4px; font-size: 350%; font-weight: bolder;">Enter a youtube URL</label>
+            <div class="buton-url">
+                <input id="url" type="search" placeholder="https://youtube/..." required autocomplete="off">
+                <button class="submit"><div style="background-image: url(https://ik.imagekit.io/xb3lv4fjl/YT-Download-img/arrow_forward_FILL0_wght400_GRAD0_opsz24.svg?updatedAt=1715178080296); background-size: 1.5rem 1.5rem; width: 1.5rem; height: 1.5rem;"></div></button>
+                
+            </div>    
+        </form>
+        <div class="main2">
+            <div class="loader">
+                <div class="load"></div>
+            </div>
+            <div style="width: 80%; max-width: 40rem;">
+                <div class="download-section">
+                    <div class="miniatura">
+                        <img class="img-miniatura" src="" alt="">
+                    </div>
+                    <div class="video_info">
+                        <p class="video-name"></p>
+                        <div class="quality-download">
+                            <form class="butons">
+                               <div class="quality">
+                                <div class="selected-quality">
+                                    <select class="options-quality">
+                                        
+                                    </select>
+                                    <img style="pointer-events: none; position: absolute; right: 5px;" src="https://ik.imagekit.io/xb3lv4fjl/YT-Download-img/expand_more_FILL0_wght400_GRAD0_opsz24.svg?updatedAt=1715178080117" alt="">
+                                </div>
+                               </div>
+                               <div class="download">
+                                <input type="submit" class="download-button" value="Download">
+                               </div>
+                            </form>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <a download href="" class="final-download"></a>
+    <script src="/js/script.js"></script>
+    <a title="If you need help for download, click here" href="/help" class="help">Need help?</a>
+</body>
+
+</html>
