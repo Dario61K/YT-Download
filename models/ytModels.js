@@ -11,19 +11,17 @@ class ytModels {
         let itag = []
         let name
         let id
-        console.log("entra en url")
+
         try {
-            console.log("entra en el try")
-            console.log(req.body.url)
+            
             const info = await ytdl.getInfo(req.body.url)
-            console.log(req.body.url)
+            
             for (let format of info.formats) {
                 if (format.container == 'mp4' && format.audioQuality != undefined && format.qualityLabel != null) {
                     itag.push(format.itag)
                 }
             }
 
-            console.log('llegada 1')
             itag.sort((a, b) => b - a)
             itag.push(140)
             name = info.videoDetails.title.replace(/[^\w\s.-]/g, '')
@@ -37,7 +35,6 @@ class ytModels {
                 info: info.formats
             }
 
-            console.log("llega aqui")
             return response
 
         }

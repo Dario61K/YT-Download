@@ -12,6 +12,6 @@
   "dependencies": {
     "crypto": "1.0.1",
     "express": "4.19.2",
-    "ytdl-core": "4.11.5"
+    "ytdl-core": "^4.11.5"
   }
 }
