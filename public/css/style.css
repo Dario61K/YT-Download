@@ -332,17 +332,3 @@ select:focus option {
 .done:hover{
     background-color: rgb(222, 1, 1);
 }
-
-.help{
-    position: absolute;
-    bottom: 18px;
-    text-decoration: none;
-    color: rgb(124, 124, 124);
-    font-size: 80%;
-    cursor: pointer;
-    font-family: "Mulish", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-
-}

@@ -15,6 +15,8 @@ let actual_url
 let down_name
 let total_info
 
+alert("For youtube policy, actualy the download is disabled, sorry for the inconvenience")
+
 //funcion para crear options en dependencia de los itags disponibles
 function create_option(itag) {
     let option = document.createElement('option')
@@ -59,7 +61,7 @@ url_form.addEventListener('submit', event => {
             return response.json()
         })
         .then(data => {
-            if (data.success) {
+            if (data.success && !data.error) {
         
                 total_info = data.info
                 video_name.innerHTML = data.name

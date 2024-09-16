@@ -9,10 +9,6 @@ class ytControllers {
         res.status(200).sendFile(path.join(__dirname, '..', 'views', 'index.html'))
     }
 
-    static async res_help(req, res) {
-        res.status(200).sendFile(path.join(__dirname, '..', 'views', 'help.html'))
-    }
-
     static async url(req, res) {
 
         const url_info = async (req) => {
@@ -53,8 +49,13 @@ class ytControllers {
                 return { success: false }
             }
         }
-        console.log(url_info.success)
-        res.json(url_info)
+        if (url_info == undefined) {
+            console.error("we can't get the information of the video")
+            res.json({
+                error: "we can't get the information of the video" 
+            })
+        }
+        res.json(await url_info(req))
     }
 
     static async download(req, res) {
@@ -107,7 +108,7 @@ class ytControllers {
                 return { success: false }
             }
         }
-        res.json(download)
+        res.json(await download(req))
     }
 }
 
