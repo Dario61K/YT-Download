@@ -1,4 +1,3 @@
-const path = require('path')
 const ytdl = require('ytdl-core')
 const path = require('path')
 const fs = require('fs')
